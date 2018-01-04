@@ -17,15 +17,15 @@
     <tags>netoffice netoffice.core office excel word outlook powerpoint access project visio interop wrapper .net20 .net30 .net35 .net40 .net45 vsto excel-dna</tags>
   </metadata>
   <files>
-    <file src="..\out\$configuration$\NetOffice\NetOffice.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\NetOffice\NetOffice.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\NetOffice\NetOffice.xml" target="lib\net40" />
-    <file src="..\out\$configuration$\OfficeApi\OfficeApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\OfficeApi\OfficeApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\OfficeApi\OfficeApi.xml" target="lib\net40" />
-    <file src="..\out\$configuration$\VBIDEApi\VBIDEApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\VBIDEApi\VBIDEApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\VBIDEApi\VBIDEApi.xml" target="lib\net40" />
+    <file src="..\libs\NetOffice.dll" target="lib\net40" />
+    <file src="..\libs\NetOffice.pdb" target="lib\net40" />
+    <file src="..\libs\NetOffice.xml" target="lib\net40" />
+    <file src="..\libs\OfficeApi.dll" target="lib\net40" />
+    <file src="..\libs\OfficeApi.pdb" target="lib\net40" />
+    <file src="..\libs\OfficeApi.xml" target="lib\net40" />
+    <file src="..\libs\VBIDEApi.dll" target="lib\net40" />
+    <file src="..\libs\VBIDEApi.pdb" target="lib\net40" />
+    <file src="..\libs\VBIDEApi.xml" target="lib\net40" />
 
     <file src="tools\NetOffice.Core.install.ps1" target="tools\install.ps1" />
 

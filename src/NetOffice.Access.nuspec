@@ -20,32 +20,37 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\out\$configuration$\AccessApi\AccessApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\AccessApi\AccessApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\AccessApi\AccessApi.xml" target="lib\net40" />
+    <file src="..\libs\AccessApi.dll" target="lib\net40" />
+    <file src="..\libs\AccessApi.pdb" target="lib\net40" />
+    <file src="..\libs\AccessApi.xml" target="lib\net40" />
     
-    <file src="..\out\$configuration$\DAOApi\DAOApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\DAOApi\DAOApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\DAOApi\DAOApi.xml" target="lib\net40" />
+    <file src="..\libs\DAOApi.dll" target="lib\net40" />
+    <file src="..\libs\DAOApi.pdb" target="lib\net40" />
+    <file src="..\libs\DAOApi.xml" target="lib\net40" />
 
-    <file src="..\out\$configuration$\ADODBApi\ADODBApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\ADODBApi\ADODBApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\ADODBApi\ADODBApi.xml" target="lib\net40" />
+    <file src="..\libs\ADODBApi.dll" target="lib\net40" />
+    <file src="..\libs\ADODBApi.pdb" target="lib\net40" />
+    <file src="..\libs\ADODBApi.xml" target="lib\net40" />
 
-    <file src="..\out\$configuration$\OWC10Api\OWC10Api.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\OWC10Api\OWC10Api.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\OWC10Api\OWC10Api.xml" target="lib\net40" />
+    <file src="..\libs\OWC10Api.dll" target="lib\net40" />
+    <file src="..\libs\OWC10Api.pdb" target="lib\net40" />
+    <file src="..\libs\OWC10Api.xml" target="lib\net40" />
 
-    <file src="..\out\$configuration$\MSDATASRCApi\MSDATASRCApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\MSDATASRCApi\MSDATASRCApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\MSDATASRCApi\MSDATASRCApi.xml" target="lib\net40" />
+    <file src="..\libs\MSDATASRCApi.dll" target="lib\net40" />
+    <file src="..\libs\MSDATASRCApi.pdb" target="lib\net40" />
+    <file src="..\libs\MSDATASRCApi.xml" target="lib\net40" />
 
-    <file src="..\out\$configuration$\MSComctlLibApi\MSComctlLibApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\MSComctlLibApi\MSComctlLibApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\MSComctlLibApi\MSComctlLibApi.xml" target="lib\net40" />
+    <file src="..\libs\MSComctlLibApi.dll" target="lib\net40" />
+    <file src="..\libs\MSComctlLibApi.pdb" target="lib\net40" />
+    <file src="..\libs\MSComctlLibApi.xml" target="lib\net40" />
 
     <file src="tools\NetOffice.Access.install.ps1" target="tools\install.ps1" />
 
     <file src="..\Source\Access\**\*.cs" target="src" />
+    <file src="..\Source\DAO\**\*.cs" target="src" />
+    <file src="..\Source\ADODB\**\*.cs" target="src" />
+    <file src="..\Source\OWC10\**\*.cs" target="src" />
+    <file src="..\Source\MSDATASRC\**\*.cs" target="src" />
+    <file src="..\Source\MSComctlLib\**\*.cs" target="src" />
   </files>
 </package>

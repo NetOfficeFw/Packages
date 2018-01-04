@@ -20,9 +20,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\out\$configuration$\MSFormsApi\MSFormsApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\MSFormsApi\MSFormsApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\MSFormsApi\MSFormsApi.xml" target="lib\net40" />
+    <file src="..\libs\MSFormsApi.dll" target="lib\net40" />
+    <file src="..\libs\MSFormsApi.pdb" target="lib\net40" />
+    <file src="..\libs\MSFormsApi.xml" target="lib\net40" />
 
     <file src="tools\NetOffice.MSForms.install.ps1" target="tools\install.ps1" />
 

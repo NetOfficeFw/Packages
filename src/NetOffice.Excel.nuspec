@@ -20,9 +20,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\out\$configuration$\ExcelApi\ExcelApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\ExcelApi\ExcelApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\ExcelApi\ExcelApi.xml" target="lib\net40" />
+    <file src="..\libs\ExcelApi.dll" target="lib\net40" />
+    <file src="..\libs\ExcelApi.pdb" target="lib\net40" />
+    <file src="..\libs\ExcelApi.xml" target="lib\net40" />
 
     <file src="tools\NetOffice.Excel.install.ps1" target="tools\install.ps1" />
 

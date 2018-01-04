@@ -20,13 +20,13 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\out\$configuration$\MSProjectApi\MSProjectApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\MSProjectApi\MSProjectApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\MSProjectApi\MSProjectApi.xml" target="lib\net40" />
+    <file src="..\libs\MSProjectApi.dll" target="lib\net40" />
+    <file src="..\libs\MSProjectApi.pdb" target="lib\net40" />
+    <file src="..\libs\MSProjectApi.xml" target="lib\net40" />
     
-    <file src="..\out\$configuration$\MSHTMLApi\MSHTMLApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\MSHTMLApi\MSHTMLApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\MSHTMLApi\MSHTMLApi.xml" target="lib\net40" />
+    <file src="..\libs\MSHTMLApi.dll" target="lib\net40" />
+    <file src="..\libs\MSHTMLApi.pdb" target="lib\net40" />
+    <file src="..\libs\MSHTMLApi.xml" target="lib\net40" />
 
     <file src="tools\NetOffice.MSProject.install.ps1" target="tools\install.ps1" />
 

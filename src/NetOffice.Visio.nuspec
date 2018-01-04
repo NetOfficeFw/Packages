@@ -20,9 +20,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\out\$configuration$\VisioApi\VisioApi.dll" target="lib\net40" />
-    <file src="..\out\$configuration$\VisioApi\VisioApi.pdb" target="lib\net40" />
-    <file src="..\out\$configuration$\VisioApi\VisioApi.xml" target="lib\net40" />
+    <file src="..\libs\VisioApi.dll" target="lib\net40" />
+    <file src="..\libs\VisioApi.pdb" target="lib\net40" />
+    <file src="..\libs\VisioApi.xml" target="lib\net40" />
 
     <file src="tools\NetOffice.Visio.install.ps1" target="tools\install.ps1" />
 
