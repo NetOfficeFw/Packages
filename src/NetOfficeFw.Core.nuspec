@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>NetOffice.Core</id>
+    <id>NetOfficeFw.Core</id>
     <version>$version$</version>
-    <title>NetOffice.Core</title>
+    <title>NetOfficeFw.Core</title>
     <authors>Sebastian Lange, Jozef Izso</authors>
     <owners>Jozef Izso</owners>
     <licenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</licenseUrl>
@@ -27,7 +27,7 @@
     <file src="..\libs\VBIDEApi.pdb" target="lib\net40" />
     <file src="..\libs\VBIDEApi.xml" target="lib\net40" />
 
-    <file src="tools\NetOffice.Core.install.ps1" target="tools\install.ps1" />
+    <file src="tools\NetOfficeFw.Core.install.ps1" target="tools\install.ps1" />
 
     <file src="..\Source\NetOffice\**\*.cs" target="src\NetOffice" />
     <file src="..\Source\Office\**\*.cs" target="src\OfficeApi" />

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>NetOffice.Access</id>
+    <id>NetOfficeFw.Access</id>
     <version>$version$</version>
-    <title>NetOffice.Access</title>
+    <title>NetOfficeFw.Access</title>
     <authors>Sebastian Lange, Jozef Izso</authors>
     <owners>Jozef Izso</owners>
     <licenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</licenseUrl>
@@ -16,7 +16,7 @@
     <copyright />
     <tags>netoffice netoffice.core office Access word outlook powerpoint access project visio interop wrapper .net20 .net30 .net35 .net40 .net45 vsto Access-dna</tags>
     <dependencies>
-      <dependency id="NetOffice.Core" version="$version$" />
+      <dependency id="NetOfficeFw.Core" version="$version$" />
     </dependencies>
   </metadata>
   <files>
@@ -44,7 +44,7 @@
     <file src="..\libs\MSComctlLibApi.pdb" target="lib\net40" />
     <file src="..\libs\MSComctlLibApi.xml" target="lib\net40" />
 
-    <file src="tools\NetOffice.Access.install.ps1" target="tools\install.ps1" />
+    <file src="tools\NetOfficeFw.Access.install.ps1" target="tools\install.ps1" />
 
     <file src="..\Source\Access\**\*.cs" target="src" />
     <file src="..\Source\DAO\**\*.cs" target="src" />
