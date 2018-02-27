@@ -25,5 +25,9 @@ PowerPoint, Access, Project and Visio.
 
 NetOffice NuGet packages are licensed under [MIT License](LICENSE.txt).
 
-Copyright © 2011-2017 Sebastian Lange
-Copyright © 2015-2017 Jozef Izso
+Copyright © 2011-2018 Sebastian Lange  
+Copyright © 2015-2018 Jozef Izso
+
+
+[VSTO]: http://msdn.microsoft.com/en-us/library/jj620922.aspx
+[NetOffice Photo Gallery]: https://netoffice.io/toolbox/project_wizard
