@@ -3,7 +3,7 @@ setlocal EnableDelayedExpansion
 
 set _build=1
 set _version=1.7.4.%_build%
-set _suffix=-pre0
+set _suffix=-pre1
 
 set _token=
 IF NOT "%1"=="" (
