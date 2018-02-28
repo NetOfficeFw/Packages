@@ -53,6 +53,11 @@ if ERRORLEVEL 1 (
   exit /b 1
 )
 
+nuget.exe push out\NetOfficeFw.Publisher.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/api/v2/package
+if ERRORLEVEL 1 (
+  exit /b 1
+)
+
 nuget.exe push out\NetOfficeFw.Visio.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/api/v2/package
 if ERRORLEVEL 1 (
   exit /b 1
