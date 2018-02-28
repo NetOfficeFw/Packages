@@ -26,6 +26,12 @@
 
     <file src="tools\NetOfficeFw.MSForms.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\MSForms\**\*.cs" target="src" />
+    <file src="..\Source\NetOffice - MSForms.sln" target="src" />
+
+    <file src="..\Source\MSForms\**\*.*" target="src\MSForms" />
+
+    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
+    <file src="..\Source\Office\**\*.*" target="src\Office" />
+    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>

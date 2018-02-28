@@ -30,6 +30,12 @@
 
     <file src="tools\NetOfficeFw.MSProject.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\MSProject\**\*.cs" target="src" />
+    <file src="..\Source\NetOffice - MSProject.sln" target="src" />
+
+    <file src="..\Source\MSProject\**\*.*" target="src\MSProject" />
+
+    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
+    <file src="..\Source\Office\**\*.*" target="src\Office" />
+    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>

@@ -46,11 +46,17 @@
 
     <file src="tools\NetOfficeFw.Access.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\Access\**\*.cs" target="src" />
-    <file src="..\Source\DAO\**\*.cs" target="src" />
-    <file src="..\Source\ADODB\**\*.cs" target="src" />
-    <file src="..\Source\OWC10\**\*.cs" target="src" />
-    <file src="..\Source\MSDATASRC\**\*.cs" target="src" />
-    <file src="..\Source\MSComctlLib\**\*.cs" target="src" />
+    <file src="..\Source\NetOffice - Access.sln" target="src\NetOffice - Access.sln" />
+
+    <file src="..\Source\Access\**\*.*" target="src\Access" />
+    <file src="..\Source\DAO\**\*.*" target="src\DAO" />
+    <file src="..\Source\ADODB\**\*.*" target="src\ADODB" />
+    <file src="..\Source\OWC10\**\*.*" target="src\OWC10" />
+    <file src="..\Source\MSDATASRC\**\*.*" target="src\MSDATASRC" />
+    <file src="..\Source\MSComctlLib\**\*.*" target="src\MSComctlLib" />
+
+    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
+    <file src="..\Source\Office\**\*.*" target="src\Office" />
+    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>

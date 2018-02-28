@@ -26,6 +26,12 @@
 
     <file src="tools\NetOfficeFw.Word.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\Word\**\*.cs" target="src" />
+    <file src="..\Source\NetOffice - Word.sln" target="src" />
+
+    <file src="..\Source\Word\**\*.*" target="src\Word" />
+
+    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
+    <file src="..\Source\Office\**\*.*" target="src\Office" />
+    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>

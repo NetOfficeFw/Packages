@@ -26,6 +26,12 @@
 
     <file src="tools\NetOfficeFw.Outlook.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\Outlook\**\*.cs" target="src" />
+    <file src="..\Source\NetOffice - Outlook.sln" target="src" />
+
+    <file src="..\Source\Outlook\**\*.*" target="src\Outlook" />
+
+    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
+    <file src="..\Source\Office\**\*.*" target="src\Office" />
+    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>
