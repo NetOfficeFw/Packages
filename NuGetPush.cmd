@@ -18,53 +18,25 @@ IF "%_token%"=="" (
 
 set PATH=%~dp0.build;%PATH%
 
-nuget.exe push out\NetOfficeFw.Core.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
+set libs=(Core Access Excel MSFormsApi MSProject Outlook PowerPoint Publisher Visio Word)
 
-nuget.exe push out\NetOfficeFw.Access.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
+for %%I in %libs% do (
+  set library=%%I
+  set file=NetOfficeFw.!library!.!_version!!_suffix!.nupkg
+  set symbols=NetOfficeFw.!library!.!_version!!_suffix!.symbols.nupkg
 
-nuget.exe push out\NetOfficeFw.Excel.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
+  echo NetOffice.!library!
+  echo  push !file!
+  nuget.exe push out\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
+  if ERRORLEVEL 1 (
+    echo Failed to push to myget.org feed.
+  )
 
-nuget.exe push out\NetOfficeFw.MSFormsApi.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
+  echo  push !symbols!
+  nuget.exe push out\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/symbols/api/v2/package
+  if ERRORLEVEL 1 (
+    echo Failed to push to myget.org symbols feed.
+  )
 
-nuget.exe push out\NetOfficeFw.MSProject.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
+  echo.
 )
-
-nuget.exe push out\NetOfficeFw.Outlook.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe push out\NetOfficeFw.PowerPoint.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe push out\NetOfficeFw.Publisher.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe push out\NetOfficeFw.Visio.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe push out\NetOfficeFw.Word.%_version%%_suffix%.nupkg "%_token%" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
