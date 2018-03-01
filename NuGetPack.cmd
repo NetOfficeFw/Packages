@@ -21,53 +21,15 @@ set PATH=%~dp0.build;%PATH%
 
 mkdir out
 
-nuget.exe pack src\NetOfficeFw.Core.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
+set libs=(Core Access Excel MSFormsApi MSProject Outlook PowerPoint Publisher Visio Word)
 
-nuget.exe pack src\NetOfficeFw.Access.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
+for %%I in %libs% do (
+  set library=%%I
+  set file=NetOfficeFw.!library!.nuspec
+  
+  echo Packing NetOffice.!library!
+  nuget.exe pack src\!file! -OutputDirectory out -Properties Configuration=!_configuration! -Version "!_version!" -Symbols -NonInteractive -ForceEnglishOutput
+  if ERRORLEVEL 1 (
+    echo Failed to create package from !file!.
+  )
 )
-
-nuget.exe pack src\NetOfficeFw.Excel.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.MSFormsApi.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.MSProject.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.Outlook.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.PowerPoint.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.Publisher.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.Visio.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
-nuget.exe pack src\NetOfficeFw.Word.nuspec -OutputDirectory out -Properties Configuration=%_configuration% -Version "%_version%" -Symbols -NonInteractive -ForceEnglishOutput
-if ERRORLEVEL 1 (
-  exit /b 1
-)
-
