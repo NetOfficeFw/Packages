@@ -27,13 +27,15 @@ for %%I in %libs% do (
 
   echo NetOffice.!library!
   echo  push !file!
-  nuget.exe push out\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/api/v2/package
+  :: https://www.myget.org/F/netofficefw-dev/api/v2/package
+  nuget.exe push out\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/api/v2/package
   if ERRORLEVEL 1 (
     echo Failed to push to myget.org feed.
   )
 
   echo  push !symbols!
-  nuget.exe push out\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netofficefw-dev/symbols/api/v2/package
+  :: https://www.myget.org/F/netofficefw-dev/symbols/api/v2/package
+  nuget.exe push out\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/symbols/api/v2/package
   if ERRORLEVEL 1 (
     echo Failed to push to myget.org symbols feed.
   )
