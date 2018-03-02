@@ -8,7 +8,7 @@
     <owners>Jozef Izso</owners>
     <licenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/NetOfficeFw/NetOffice</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeFwLogo_256x256.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NetOffice Publisher library for extending and automating Microsoft Publisher.
 
