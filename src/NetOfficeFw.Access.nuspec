@@ -52,7 +52,7 @@ This is upgrade for the legacy NetOffice.Access nuget package.
 
     <file src="tools\NetOfficeFw.Access.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\NetOffice - Access.sln" target="src\NetOffice - Access.sln" />
+    <file src="..\Source\NetOffice.sln" target="src" />
 
     <file src="..\Source\Access\**\*.*" target="src\Access" />
     <file src="..\Source\DAO\**\*.*" target="src\DAO" />

@@ -1,8 +1,8 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=3
-set _version=1.7.4.%_build%
+set _build=0
+set _version=1.7.3.%_build%
 set _suffix=
 
 set _token=
@@ -18,7 +18,7 @@ IF "%_token%"=="" (
 
 set PATH=%~dp0.build;%PATH%
 
-set libs=(Core Access Excel MSFormsApi MSProject Outlook PowerPoint Publisher Visio Word)
+set libs=(Core Access Excel MSFormsApi MSProject Outlook PowerPoint Visio Word)
 
 for %%I in %libs% do (
   set library=%%I

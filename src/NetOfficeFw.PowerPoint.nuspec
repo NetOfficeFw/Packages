@@ -32,7 +32,7 @@ This is upgrade for the legacy NetOffice.PowerPoint nuget package.
 
     <file src="tools\NetOfficeFw.PowerPoint.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\NetOffice - PowerPoint.sln" target="src" />
+    <file src="..\Source\NetOffice.sln" target="src" />
 
     <file src="..\Source\PowerPoint\**\*.*" target="src\PowerPoint" />
 

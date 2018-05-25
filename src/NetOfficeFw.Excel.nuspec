@@ -32,7 +32,7 @@ This is upgrade for the legacy NetOffice.Excel nuget package.
 
     <file src="tools\NetOfficeFw.Excel.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\NetOffice - Excel.sln" target="src" />
+    <file src="..\Source\NetOffice.sln" target="src" />
 
     <file src="..\Source\Excel\**\*.*" target="src\Excel" />
 

@@ -13,7 +13,7 @@
     <description>NetOffice core library for extending and automating Microsoft Office applications.
 
 NetOffice is a set of libraries and tools for building addins, extending and automating Microsoft Office applications.
-NetOffice supports extending and automating Microsoft Office applications: Excel, Word, Outlook, PowerPoint, Access, Project, Publisher and Visio.</description>
+NetOffice supports extending and automating Microsoft Office applications: Excel, Word, Outlook, PowerPoint, Access, Project and Visio.</description>
     <summary>NetOffice core library for extending and automating Microsoft Office applications.</summary>
     <releaseNotes />
     <copyright />

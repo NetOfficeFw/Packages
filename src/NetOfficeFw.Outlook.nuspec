@@ -32,7 +32,7 @@ This is upgrade for the legacy NetOffice.Outlook nuget package.
 
     <file src="tools\NetOfficeFw.Outlook.install.ps1" target="tools\install.ps1" />
 
-    <file src="..\Source\NetOffice - Outlook.sln" target="src" />
+    <file src="..\Source\NetOffice.sln" target="src" />
 
     <file src="..\Source\Outlook\**\*.*" target="src\Outlook" />
 
