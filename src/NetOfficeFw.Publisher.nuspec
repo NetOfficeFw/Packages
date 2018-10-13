@@ -24,9 +24,9 @@ NetOffice supports extending and automating Microsoft Office applications: Excel
     </dependencies>
   </metadata>
   <files>
-    <file src="..\libs\WordApi.dll" target="lib\net40" />
-    <file src="..\libs\WordApi.pdb" target="lib\net40" />
-    <file src="..\libs\WordApi.xml" target="lib\net40" />
+    <file src="..\libs\PublisherApi.dll" target="lib\net40" />
+    <file src="..\libs\PublisherApi.pdb" target="lib\net40" />
+    <file src="..\libs\PublisherApi.xml" target="lib\net40" />
 
     <file src="tools\NetOfficeFw.Publisher.install.ps1" target="tools\install.ps1" />
 
