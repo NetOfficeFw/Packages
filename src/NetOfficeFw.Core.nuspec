@@ -16,19 +16,64 @@ NetOffice is a set of libraries and tools for building addins, extending and aut
 NetOffice supports extending and automating Microsoft Office applications: Excel, Word, Outlook, PowerPoint, Access, Project and Visio.</description>
     <summary>NetOffice core library for extending and automating Microsoft Office applications.</summary>
     <releaseNotes />
-    <copyright />
+    <copyright>Copyright (c) 2012 Sebastian Lange</copyright>
     <tags>netoffice netofficefw NetOffice.Core office excel word outlook powerpoint access project visio publisher interop wrapper net40 net45 vsto excel-dna</tags>
   </metadata>
   <files>
-    <file src="..\libs\NetOffice.dll" target="lib\net40" />
-    <file src="..\libs\NetOffice.pdb" target="lib\net40" />
-    <file src="..\libs\NetOffice.xml" target="lib\net40" />
-    <file src="..\libs\OfficeApi.dll" target="lib\net40" />
-    <file src="..\libs\OfficeApi.pdb" target="lib\net40" />
-    <file src="..\libs\OfficeApi.xml" target="lib\net40" />
-    <file src="..\libs\VBIDEApi.dll" target="lib\net40" />
-    <file src="..\libs\VBIDEApi.pdb" target="lib\net40" />
-    <file src="..\libs\VBIDEApi.xml" target="lib\net40" />
+    <!-- net20 -->
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\NetOffice.dll" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\NetOffice.pdb" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\NetOffice.xml" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\OfficeApi.dll" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\OfficeApi.pdb" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\OfficeApi.xml" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\VBIDEApi.dll" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\VBIDEApi.pdb" target="lib\net20" />
+    <file src="..\libs\NET 2.0\Assemblies\Any CPU\VBIDEApi.xml" target="lib\net20" />
+
+    <!-- net30 -->
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\NetOffice.dll" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\NetOffice.pdb" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\NetOffice.xml" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\OfficeApi.dll" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\OfficeApi.pdb" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\OfficeApi.xml" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\VBIDEApi.dll" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\VBIDEApi.pdb" target="lib\net30" />
+    <file src="..\libs\NET 3.0\Assemblies\Any CPU\VBIDEApi.xml" target="lib\net30" />
+
+    <!-- net35 -->
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\NetOffice.dll" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\NetOffice.pdb" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\NetOffice.xml" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\OfficeApi.dll" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\OfficeApi.pdb" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\OfficeApi.xml" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\VBIDEApi.dll" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\VBIDEApi.pdb" target="lib\net35" />
+    <file src="..\libs\NET 3.5\Assemblies\Any CPU\VBIDEApi.xml" target="lib\net35" />
+
+    <!-- net40 -->
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\NetOffice.dll" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\NetOffice.pdb" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\NetOffice.xml" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\OfficeApi.dll" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\OfficeApi.pdb" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\OfficeApi.xml" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\VBIDEApi.dll" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\VBIDEApi.pdb" target="lib\net40" />
+    <file src="..\libs\NET 4.0\Assemblies\Any CPU\VBIDEApi.xml" target="lib\net40" />
+
+    <!-- net45 -->
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\NetOffice.dll" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\NetOffice.pdb" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\NetOffice.xml" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\OfficeApi.dll" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\OfficeApi.pdb" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\OfficeApi.xml" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\VBIDEApi.dll" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\VBIDEApi.pdb" target="lib\net45" />
+    <file src="..\libs\NET 4.5\Assemblies\Any CPU\VBIDEApi.xml" target="lib\net45" />
 
     <file src="tools\NetOfficeFw.Core.install.ps1" target="tools\install.ps1" />
 
