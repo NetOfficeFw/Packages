@@ -22,7 +22,7 @@ This is upgrade for the legacy NetOffice.Visio nuget package.
     <copyright />
     <tags>netoffice netofficefw netoffice.core office Visio interop wrapper net40 net45 vsto</tags>
     <dependencies>
-      <dependency id="NetOfficeFw.Core" version="$version$" />
+      <dependency id="NetOfficeFw.Core" version="[$version$]" />
     </dependencies>
   </metadata>
   <files>
