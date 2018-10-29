@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=.0
+set _build=.1
 set _version=1.7.3%_build%
 set _suffix=
 
@@ -30,7 +30,7 @@ for %%I in %libs% do (
   :: https://www.myget.org/F/netofficefw-dev/api/v2/package
   :: https://www.myget.org/F/netoffice/api/v2/package
   :: https://api.nuget.org/v3/index.json
-  nuget.exe push out\signed\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/api/v2/package
+  nuget.exe push out\signed\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/api/v2/package -Force
   if ERRORLEVEL 1 (
     echo Failed to push to myget.org feed.
   )
@@ -39,7 +39,7 @@ for %%I in %libs% do (
   :: https://www.myget.org/F/netofficefw-dev/symbols/api/v2/package
   :: https://www.myget.org/F/netoffice/symbols/api/v2/package
   :: https://nuget.smbsrc.net/
-  nuget.exe push out\signed\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/symbols/api/v2/package
+  nuget.exe push out\signed\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/symbols/api/v2/package -Force
   if ERRORLEVEL 1 (
     echo Failed to push to myget.org symbols feed.
   )

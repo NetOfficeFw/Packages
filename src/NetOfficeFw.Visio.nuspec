@@ -26,21 +26,6 @@ This is upgrade for the legacy NetOffice.Visio nuget package.
     </dependencies>
   </metadata>
   <files>
-    <!-- net20 -->
-    <file src="..\libs\NET 2.0\Assemblies\Any CPU\VisioApi.dll" target="lib\net20" />
-    <file src="..\libs\NET 2.0\Assemblies\Any CPU\VisioApi.pdb" target="lib\net20" />
-    <file src="..\libs\NET 2.0\Assemblies\Any CPU\VisioApi.xml" target="lib\net20" />
-
-    <!-- net30 -->
-    <file src="..\libs\NET 3.0\Assemblies\Any CPU\VisioApi.dll" target="lib\net30" />
-    <file src="..\libs\NET 3.0\Assemblies\Any CPU\VisioApi.pdb" target="lib\net30" />
-    <file src="..\libs\NET 3.0\Assemblies\Any CPU\VisioApi.xml" target="lib\net30" />
-
-    <!-- net35 -->
-    <file src="..\libs\NET 3.5\Assemblies\Any CPU\VisioApi.dll" target="lib\net35" />
-    <file src="..\libs\NET 3.5\Assemblies\Any CPU\VisioApi.pdb" target="lib\net35" />
-    <file src="..\libs\NET 3.5\Assemblies\Any CPU\VisioApi.xml" target="lib\net35" />
-
     <!-- net40 -->
     <file src="..\libs\NET 4.0\Assemblies\Any CPU\VisioApi.dll" target="lib\net40" />
     <file src="..\libs\NET 4.0\Assemblies\Any CPU\VisioApi.pdb" target="lib\net40" />

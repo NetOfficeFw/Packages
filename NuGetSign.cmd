@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=.0
+set _build=.1
 set _version=1.7.3%_build%
 set _suffix=
 set _certificate=Open Source Developer, Jozef Izso
