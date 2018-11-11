@@ -19,7 +19,7 @@ This is upgrade for the legacy NetOffice.Excel nuget package.
 </description>
     <summary>NetOffice Excel library for extending and automating Microsoft Excel.</summary>
     <releaseNotes />
-    <copyright />
+    <copyright>Copyright © 2012-2018 Sebastian Lange</copyright>
     <tags>netoffice netofficefw NetOffice.Excel office Excel interop wrapper net40 net45 vsto excel-dna</tags>
     <dependencies>
       <dependency id="NetOfficeFw.Core" version="[$version$]" />
