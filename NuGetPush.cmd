@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=5
+set _build=6
 set _version=1.7.4.%_build%
 set _suffix=
 
@@ -23,14 +23,15 @@ set libs=(Core Access Excel MSFormsApi MSProject Outlook PowerPoint Publisher Vi
 for %%I in %libs% do (
   set library=%%I
   set file=NetOfficeFw.!library!.!_version!!_suffix!.nupkg
-  set symbols=NetOfficeFw.!library!.!_version!!_suffix!.symbols.nupkg
+  rem set symbols=NetOfficeFw.!library!.!_version!!_suffix!.symbols.nupkg
+  set symbols=NetOfficeFw.!library!.!_version!!_suffix!.snupkg
 
   echo NetOffice.!library!
   echo  push !file!
   REM https://www.myget.org/F/netofficefw-dev/api/v2/package
   REM https://www.myget.org/F/netoffice/api/v2/package
   REM https://api.nuget.org/v3/index.json
-  nuget.exe push out\signed\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/api/v2/package
+  nuget.exe push out\signed\!file! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://api.nuget.org/v3/index.json
   if ERRORLEVEL 1 (
     echo Failed to push to myget.org feed.
   )
@@ -39,7 +40,7 @@ for %%I in %libs% do (
   REM https://www.myget.org/F/netofficefw-dev/symbols/api/v2/package
   REM https://www.myget.org/F/netoffice/symbols/api/v2/package
   REM https://nuget.smbsrc.net/
-  nuget.exe push out\signed\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://www.myget.org/F/netoffice/symbols/api/v2/package
+  nuget.exe push out\signed\!symbols! "!_token!" -NonInteractive -ForceEnglishOutput -Source https://api.nuget.org/v3/index.json
   if ERRORLEVEL 1 (
     echo Failed to push to myget.org symbols feed.
   )
