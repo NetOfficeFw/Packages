@@ -1,8 +1,8 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _certificate=Open Source Developer, Jozef Izso
-set _thumbprint=533B9839AEBA395DDFB303888629C88BFF512983
+set _certificate=goIT Solutions, s.r.o.
+set _thumbprint=AC6DBFFB1BF8B62281DEB8641023A66CDDC5DB57
 
 set PATH=%~dp0.build;%PATH%
 
