@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=7
+set _build=9
 IF NOT "%APPVEYOR_BUILD_NUMBER%"=="" (
   set _build=%APPVEYOR_BUILD_NUMBER%
 )
@@ -28,8 +28,8 @@ for %%I in %libs% do (
   set file=NetOfficeFw.!library!.nuspec
   
   echo Packing NetOffice.!library!
-  nuget.exe pack src\!file! -OutputDirectory out -Properties Configuration=!_configuration! -Version "!_version!" -Symbols -NonInteractive -ForceEnglishOutput
+  nuget.exe pack src\!file! -OutputDirectory out -Properties Configuration=!_configuration! -Version "!_version!" -Symbols -SymbolPackageFormat snupkg -NonInteractive -ForceEnglishOutput
   if ERRORLEVEL 1 (
-    echo Failed to create package from !file!.
+    echo Failed to create package and symbols from !file!.
   )
 )
