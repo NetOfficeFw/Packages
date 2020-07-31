@@ -6,7 +6,7 @@
     <title>NetOfficeFw.MSProject</title>
     <authors>Sebastian Lange, Jozef Izso</authors>
     <owners>Jozef Izso</owners>
-    <licenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/NetOfficeFw/NetOffice</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -35,6 +35,7 @@ This is upgrade for the legacy NetOffice.MSProject nuget package.
     <file src="..\libs\MSHTMLApi.xml" target="lib\net40" />
 
     <file src="tools\NetOfficeFw.MSProject.install.ps1" target="tools\install.ps1" />
+    <file src="..\LICENSE.txt" target="" />
 
     <file src="..\Source\NetOffice - MSProject.sln" target="src" />
 

@@ -6,7 +6,7 @@
     <title>NetOfficeFw.Publisher</title>
     <authors>Sebastian Lange, Jozef Izso</authors>
     <owners>Jozef Izso</owners>
-    <licenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/NetOfficeFw/NetOffice</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -29,6 +29,7 @@ NetOffice supports extending and automating Microsoft Office applications: Excel
     <file src="..\libs\PublisherApi.xml" target="lib\net40" />
 
     <file src="tools\NetOfficeFw.Publisher.install.ps1" target="tools\install.ps1" />
+    <file src="..\LICENSE.txt" target="" />
 
     <file src="..\Source\NetOffice - Publisher.sln" target="src" />
 
