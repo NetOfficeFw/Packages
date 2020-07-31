@@ -17,7 +17,7 @@ NetOffice supports extending and automating Microsoft Office applications: Excel
 </description>
     <summary>NetOffice Publisher library for extending and automating Microsoft Publisher.</summary>
     <releaseNotes />
-    <copyright>Copyright © 2012-2018 Sebastian Lange</copyright>
+    <copyright>Copyright © 2012-2018 Sebastian Lange, © 2015-2020 Jozef Izso</copyright>
     <tags>netoffice netofficefw netoffice.core office Publisher interop wrapper net40 net45 vsto</tags>
     <dependencies>
       <dependency id="NetOfficeFw.Core" version="[$version$]" />

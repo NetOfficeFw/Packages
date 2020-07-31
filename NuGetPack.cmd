@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=11
+set _build=0
 IF NOT "%APPVEYOR_BUILD_NUMBER%"=="" (
   set _build=%APPVEYOR_BUILD_NUMBER%
 )
@@ -10,7 +10,7 @@ IF NOT "%1"=="" (
 )
 
 set _suffix=
-set _version=1.7.4.%_build%%_suffix%
+set _version=1.7.5.%_build%%_suffix%
 set _configuration=Release
 IF NOT "%CONFIGURATION%"=="" (
   set _configuration=%CONFIGURATION%
