@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=9
+set _build=11
 set _version=1.7.4.%_build%
 set _suffix=
 

@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=9
+set _build=11
 IF NOT "%APPVEYOR_BUILD_NUMBER%"=="" (
   set _build=%APPVEYOR_BUILD_NUMBER%
 )
