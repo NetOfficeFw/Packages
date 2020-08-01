@@ -7,7 +7,8 @@
     <authors>Sebastian Lange, Jozef Izso</authors>
     <owners>Jozef Izso</owners>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/NetOfficeFw/NetOffice</projectUrl>
+    <repository type="git" url="https://github.com/NetOfficeFw/NetOffice.git" branch="$GitBranch$" commit="$GitCommit$" />
+    <projectUrl>https://netoffice.io</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</iconUrl>
     <icon>icon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

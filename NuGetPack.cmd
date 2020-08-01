@@ -16,6 +16,8 @@ IF NOT "%CONFIGURATION%"=="" (
   set _configuration=%CONFIGURATION%
 )
 
+set _branch=releases/netoffice_v1.7.5
+set _commit=ebb53379378354852082902eef19b7d695b08fac
 
 set PATH=%~dp0.build;%PATH%
 
@@ -28,7 +30,9 @@ for %%I in %libs% do (
   set file=NetOfficeFw.!library!.nuspec
   
   echo Packing NetOffice.!library!
-  nuget.exe pack src\!file! -OutputDirectory out -Properties Configuration=!_configuration! -Version "!_version!" -Symbols -SymbolPackageFormat snupkg -NonInteractive -ForceEnglishOutput
+  nuget.exe pack src\!file! -OutputDirectory out -Version "!_version!" -Symbols -SymbolPackageFormat snupkg ^
+    -Properties Configuration=!_configuration!;GitBranch="!_branch!";GitCommit=!_commit! ^
+    -NonInteractive -ForceEnglishOutput
   if ERRORLEVEL 1 (
     echo Failed to create package and symbols from !file!.
   )
