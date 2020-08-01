@@ -9,6 +9,7 @@
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/NetOfficeFw/NetOffice</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</iconUrl>
+    <icon>icon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NetOffice Outlook library for extending and automating Microsoft Outlook.
 
@@ -32,6 +33,7 @@ This is upgrade for the legacy NetOffice.Outlook nuget package.
 
     <file src="tools\NetOfficeFw.Outlook.install.ps1" target="tools\install.ps1" />
     <file src="..\LICENSE.txt" target="" />
+    <file src="..\icon.png" target="" />
 
     <file src="..\Source\NetOffice - Outlook.sln" target="src" />
 
