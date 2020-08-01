@@ -35,13 +35,5 @@ NetOffice supports extending and automating Microsoft Office applications: Excel
     <file src="tools\NetOfficeFw.Publisher.install.ps1" target="tools\install.ps1" />
     <file src="..\LICENSE.txt" target="" />
     <file src="..\icon.png" target="" />
-
-    <file src="..\Source\NetOffice - Publisher.sln" target="src" />
-
-    <file src="..\Source\Publisher\**\*.*" target="src\Publisher" />
-
-    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
-    <file src="..\Source\Office\**\*.*" target="src\Office" />
-    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>

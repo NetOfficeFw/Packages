@@ -37,13 +37,5 @@ This is upgrade for the legacy NetOffice.Visio nuget package.
     <file src="tools\NetOfficeFw.Visio.install.ps1" target="tools\install.ps1" />
     <file src="..\LICENSE.txt" target="" />
     <file src="..\icon.png" target="" />
-
-    <file src="..\Source\NetOffice - Visio.sln" target="src" />
-
-    <file src="..\Source\Visio\**\*.*" target="src\Visio" />
-
-    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
-    <file src="..\Source\Office\**\*.*" target="src\Office" />
-    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
   </files>
 </package>
