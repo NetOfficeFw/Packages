@@ -23,7 +23,9 @@ This is upgrade for the legacy NetOffice.Word nuget package.
     <copyright>Copyright © 2012-2018 Sebastian Lange, © 2015-2020 Jozef Izso</copyright>
     <tags>netoffice netofficefw netoffice.word office Word interop wrapper net40 net45 vsto</tags>
     <dependencies>
-      <dependency id="NetOfficeFw.Core" version="[$version$]" />
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="NetOfficeFw.Core" version="[$version$]" />
+      </group>
     </dependencies>
   </metadata>
   <files>
