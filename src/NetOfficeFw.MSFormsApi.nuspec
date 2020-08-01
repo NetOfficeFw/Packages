@@ -6,9 +6,11 @@
     <title>NetOfficeFw.MSFormsApi</title>
     <authors>Sebastian Lange, Jozef Izso</authors>
     <owners>Jozef Izso</owners>
-    <licenseUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice/master/LICENSE.txt</licenseUrl>
-    <projectUrl>https://github.com/NetOfficeFw/NetOffice</projectUrl>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/NetOfficeFw/NetOffice.git" branch="$GitBranch$" commit="$GitCommit$" />
+    <projectUrl>https://netoffice.io</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NetOfficeFw/NetOffice-Assets/master/NetOfficeLogo_200x200.png</iconUrl>
+    <icon>icon.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NetOffice MSFormsApi library is wrapper for MSForms COM type library.
 
@@ -19,10 +21,12 @@ This is upgrade for the legacy NetOffice.MSFormsApi nuget package.
 </description>
     <summary>NetOffice MSFormsApi library is wrapper for MSForms COM type library.</summary>
     <releaseNotes />
-    <copyright>Copyright © 2012-2018 Sebastian Lange</copyright>
+    <copyright>Copyright © 2012-2018 Sebastian Lange, © 2015-2020 Jozef Izso</copyright>
     <tags>netoffice netofficefw NetOffice.MSFormsApi office MSForms interop wrapper net40 net45 vsto</tags>
     <dependencies>
-      <dependency id="NetOfficeFw.Core" version="[$version$]" />
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="NetOfficeFw.Core" version="[$version$]" />
+      </group>
     </dependencies>
   </metadata>
   <files>
@@ -31,13 +35,7 @@ This is upgrade for the legacy NetOffice.MSFormsApi nuget package.
     <file src="..\libs\MSFormsApi.xml" target="lib\net40" />
 
     <file src="tools\NetOfficeFw.MSFormsApi.install.ps1" target="tools\install.ps1" />
-
-    <file src="..\Source\NetOffice - MSForms.sln" target="src" />
-
-    <file src="..\Source\MSForms\**\*.*" target="src\MSForms" />
-
-    <file src="..\Source\NetOffice\**\*.*" target="src\NetOffice" />
-    <file src="..\Source\Office\**\*.*" target="src\Office" />
-    <file src="..\Source\VBIDE\**\*.*" target="src\VBIDE" />
+    <file src="..\LICENSE.txt" target="" />
+    <file src="..\icon.png" target="" />
   </files>
 </package>
