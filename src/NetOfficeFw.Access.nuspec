@@ -20,7 +20,7 @@ NetOffice supports extending and automating Microsoft Office applications: Excel
 This is upgrade for the legacy NetOffice.Access nuget package.
 </description>
     <summary>NetOffice Access library for extending and automating Microsoft Access.</summary>
-    <releaseNotes>https://github.com/NetOfficeFw/NetOffice/releases/tag/v1.7.4.12</releaseNotes>
+    <releaseNotes>https://github.com/NetOfficeFw/NetOffice/releases/tag/v1.7.5.1</releaseNotes>
     <copyright>Copyright © 2012-2018 Sebastian Lange, © 2015-2020 Jozef Izso</copyright>
     <tags>netoffice netofficefw NetOffice.Access office Access interop wrapper net40 net45 vsto</tags>
     <dependencies>
