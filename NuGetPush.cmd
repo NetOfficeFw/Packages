@@ -1,8 +1,8 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=1
-set _version=1.7.5.%_build%
+set _build=
+set _version=1.7.6%_build%
 set _suffix=
 
 set _token=

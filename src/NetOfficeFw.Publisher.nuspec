@@ -18,7 +18,7 @@ NetOffice is a set of libraries and tools for building addins, extending and aut
 NetOffice supports extending and automating Microsoft Office applications: Excel, Word, Outlook, PowerPoint, Access, Project, Publisher and Visio.
 </description>
     <summary>NetOffice Publisher library for extending and automating Microsoft Publisher.</summary>
-    <releaseNotes>https://github.com/NetOfficeFw/NetOffice/releases/tag/v1.7.5.1</releaseNotes>
+    <releaseNotes>https://github.com/NetOfficeFw/NetOffice/releases/tag/v1.7.6</releaseNotes>
     <copyright>Copyright © 2012-2018 Sebastian Lange, © 2015-2020 Jozef Izso</copyright>
     <tags>netoffice netofficefw netoffice.core office Publisher interop wrapper net40 net45 vsto</tags>
     <dependencies>

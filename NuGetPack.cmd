@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 
-set _build=1
+set _build=
 IF NOT "%APPVEYOR_BUILD_NUMBER%"=="" (
   set _build=%APPVEYOR_BUILD_NUMBER%
 )
@@ -10,14 +10,14 @@ IF NOT "%1"=="" (
 )
 
 set _suffix=
-set _version=1.7.5.%_build%%_suffix%
+set _version=1.7.6%_build%%_suffix%
 set _configuration=Release
 IF NOT "%CONFIGURATION%"=="" (
   set _configuration=%CONFIGURATION%
 )
 
-set _branch=releases/netoffice_v1.7.5.1
-set _commit=9b38cee626aad7924d3814f8340f64b093f9e87b
+set _branch=releases/netoffice_v1.7.6
+set _commit=62107e02c5ba94d75d2f36b76ac5cd24fe2e898f
 
 set PATH=%~dp0.build;%PATH%
 
