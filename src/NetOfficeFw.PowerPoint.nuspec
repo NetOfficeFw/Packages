@@ -20,7 +20,7 @@ NetOffice supports extending and automating Microsoft Office applications: Excel
 This is upgrade for the legacy NetOffice.PowerPoint nuget package.
 </description>
     <summary>NetOffice PowerPoint library for extending and automating Microsoft PowerPoint.</summary>
-    <releaseNotes>https://github.com/NetOfficeFw/NetOffice/releases/tag/v1.7.6</releaseNotes>
+    <releaseNotes>https://github.com/NetOfficeFw/NetOffice/releases/tag/v1.7.8</releaseNotes>
     <copyright>Copyright © 2012-2018 Sebastian Lange, © 2015-2020 Jozef Izso</copyright>
     <tags>netoffice netofficefw netoffice.core office PowerPoint interop wrapper net40 net45 vsto</tags>
     <dependencies>
