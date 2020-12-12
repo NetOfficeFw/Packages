@@ -10,13 +10,13 @@ IF NOT "%1"=="" (
 )
 
 set _suffix=
-set _version=1.7.8%_build%%_suffix%
+set _version=1.7.9%_build%%_suffix%
 set _configuration=Release
 IF NOT "%CONFIGURATION%"=="" (
   set _configuration=%CONFIGURATION%
 )
 
-set _branch=releases/netoffice_v1.7.8
+set _branch=releases/netoffice_v1.7.9
 set _commit=39761fb6f0fb1ec6c448b20a5ba7ef301b856b65
 
 set PATH=%~dp0.build;%PATH%
