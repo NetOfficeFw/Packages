@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 set _build=
-set _version=1.7.9%_build%
+set _version=1.8.1%_build%
 set _suffix=
 
 set _token=

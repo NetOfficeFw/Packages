@@ -2,7 +2,7 @@
 setlocal EnableDelayedExpansion
 
 set _certificate=goIT Solutions, s.r.o.
-set _thumbprint=AC6DBFFB1BF8B62281DEB8641023A66CDDC5DB57
+set _thumbprint=CA24B654C5FFAC7D97BD196269BD0E80FADF1841
 
 set PATH=C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86;%PATH%
 
